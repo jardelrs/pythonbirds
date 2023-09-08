@@ -1,3 +1,19 @@
+class Carro:
+    def __init__(self, direcao, motor):
+        self.motor = motor
+        self.direcao = direcao
+
+    def calcular_velocidade(self):
+        return self.motor.velocidade
+
+    def acelerar(self):
+        self.motor.acelerar()
+
+    def frear(self):
+        self.motor.frear()
+
+
+
 NORTE = 'Norte'
 SUL = 'Sul'
 LESTE = 'Leste'
@@ -17,7 +33,7 @@ class Direcao:
         self.valor = self.rotacao_a_direita_dct[self.valor]
 
     def girar_a_esquerda(self):
-        sel.valor = self.rotacao_a_esquerda_dct[self.valor]
+        self.valor = self.rotacao_a_esquerda_dct[self.valor]
 
 class Motor:
     def __init__(self):
