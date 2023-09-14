@@ -12,8 +12,6 @@ class Carro:
     def frear(self):
         self.motor.frear()
 
-
-
 NORTE = 'Norte'
 SUL = 'Sul'
 LESTE = 'Leste'
